@@ -5,8 +5,10 @@ The project emphasizes querying and manipulating data using INSERT and SELECT st
 
 1. Create DB
    create database Employees;
+
+   ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/created%20table%20and%20inserted%20data.png)
    
-2. Create table
+3. Create table
      create table Managers 
      (
 	     Manager_Id INT primary key,
@@ -36,20 +38,34 @@ The project emphasizes querying and manipulating data using INSERT and SELECT st
       (13766,'yra','santos','2004-08-28',20,'2024-10-15','F','Testing',2500000),
       (13767,'arlica','mae','1991-09-12',33,'2025-01-08','F','Application',1400000);
 
-   4. a query that retrieves the name and date of birth of the manager with Manager_Id
+      ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/data%20inserted.png)
+
+   5. a query that retrieves the name and date of birth of the manager with Manager_Id
   
       select concat(First_name,' ',Last_Name) Name, dob, Manager_id from Managers;
 
-   5. a query to display records of all managers except ‘Aaliya’.
+      ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/select%201.png)
+
+   7. a query to display records of all managers except ‘Aaliya’.
 
       select * from Managers where first_name <>'Aaliya';
+
+      ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/not%20equal%20.png)
       
-   7. a query to display details of managers whose department is IT and earns more than 25000 per month.
+   9. a query to display details of managers whose department is IT and earns more than 25000 per month.
   
       Those who works in IT
       select * from Managers where department='IT';
+      ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/who%20works%20in%20IT.png)
+
       Final query: select * from Managers where department='IT' and salary>25000;
 
-   9. a query to display details of managers whose salary is between 10000 and 35000.
+      ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/salary%20greater.png)
+
+   11. a query to display details of managers whose salary is between 10000 and 35000.
+       Salary:
+        ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/salary.png)
   
        select * from Managers where salary between  10000 and 35000;
+
+       ![Employees-DB](https://github.com/Sarikav123/Employees-DB/blob/main/salary%20between.png)
